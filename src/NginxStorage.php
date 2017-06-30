@@ -57,7 +57,6 @@ class NginxStorage extends AbstractStorage
         // parce que celui de base est mis dans le constructeur
         // et qu'il ne faut SURTOUT PAS celui de la fin sinon ça ne marche pas...
         $base_path = trim($base_path, '/');
-        $file_path = trim($file_path, '/');
         $path      = "{$base_path}/{$file_path}";
 
         $expire = time() + 3600; // par défaut, le lien sera valable 1h
