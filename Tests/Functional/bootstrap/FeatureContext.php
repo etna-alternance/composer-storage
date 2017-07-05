@@ -220,9 +220,9 @@ class FeatureContext extends BehatContext
     }
 
     /**
-     * @Given /^je veux supprimer le fichier "([^"]*)" situé dans "([^"]*)"$/
+     * @Given /^je veux supprimer le chemin "([^"]*)" situé dans "([^"]*)"$/
      */
-    public function jeVeuxSupprimerLeFichierSitueDans($path, $basepath)
+    public function jeVeuxSupprimerLeCheminSitueDans($path, $basepath)
     {
         try {
             $this->data = $this->app["file-manager"]->deleteFile($path, $basepath)->getReasonPhrase();
